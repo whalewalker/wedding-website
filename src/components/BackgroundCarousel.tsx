@@ -16,17 +16,14 @@ export const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
                                                                           interval = 5000
                                                                       }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [isPlaying, setIsPlaying] = useState(true);
-
     useEffect(() => {
-        if (!isPlaying) return;
 
         const timer = setInterval(() => {
             setCurrentIndex((prev) => (prev + 1) % media.length);
         }, interval);
 
         return () => clearInterval(timer);
-    }, [isPlaying, media.length, interval]);
+    }, [media.length, interval]);
 
     const navigate = (direction: 'prev' | 'next') => {
         setCurrentIndex((prev) => {
