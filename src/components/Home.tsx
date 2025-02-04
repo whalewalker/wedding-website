@@ -9,14 +9,13 @@ export const Home: React.FC = () => {
 
 
     const mediaItems = [
-        {type: 'image' as const, url: 'src/assets/home-img-1.png'},
-        {type: 'image' as const, url: 'src/assets/home-img-2.png'},
-        {type: 'image' as const, url: 'src/assets/home-img-3.png'},
-        {type: 'image' as const, url: 'src/assets/home-img-4.png'},
-        {type: 'image' as const, url: 'src/assets/home-img-5.png'},
-        {type: 'image' as const, url: 'src/assets/home-img-6.png'},
+        {type: 'image' as const, url: new URL('../assets/home-img-1.png', import.meta.url).href},
+        {type: 'image' as const, url: new URL('../assets/home-img-2.png', import.meta.url).href},
+        {type: 'image' as const, url: new URL('../assets/home-img-3.png', import.meta.url).href},
+        {type: 'image' as const, url: new URL('../assets/home-img-4.png', import.meta.url).href},
+        {type: 'image' as const, url: new URL('../assets/home-img-5.png', import.meta.url).href},
+        {type: 'image' as const, url: new URL('../assets/home-img-6.png', import.meta.url).href},
     ];
-
     return (
         <div className="relative h-screen flex items-center justify-center overflow-hidden">
             {/* Background Carousel */}
@@ -47,7 +46,7 @@ export const Home: React.FC = () => {
             </div>
 
             {/* Audio Player */}
-            <AudioPlayer audioUrl="src/assets/videoplayback.mp4"/>
+            <AudioPlayer audioUrl={new URL('../assets/videoplayback.mp4', import.meta.url).href}/>
         </div>
     );
 };
