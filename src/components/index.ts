@@ -6,3 +6,6 @@ export {AboutUs} from './AboutUs';
 export {Venue} from './Venue';
 export {Contribution} from './Contribution';
 export {Footer} from './Footer';
+export {CountdownDisplay} from './CountdownDisplay';
+export {BackgroundCarousel} from './BackgroundCarousel.tsx';
+export {AudioPlayer} from './AudioPlayer.tsx';

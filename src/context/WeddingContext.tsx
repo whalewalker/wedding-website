@@ -4,6 +4,7 @@ interface WeddingContextType {
     coupleDetails: {
         groomName: string;
         brideName: string;
+        coupleTitle: string;
         groomOccupation: string;
         brideOccupation: string;
         story: string;
@@ -20,10 +21,11 @@ const defaultContext: WeddingContextType = {
     coupleDetails: {
         groomName: "Damilare Williams",
         brideName: "Adetola Bolarinwa",
+        coupleTitle: "Dami & Tola",
         groomOccupation: "Software Engineer",
         brideOccupation: "Architect",
         story: "We met at a local coffee shop...",
-        date: "June 15, 2024",
+        date: new Date(2025, 5, 10).toDateString(),
         venue: {
             name: "Grand Palace",
             address: "123 Wedding Lane, Romance City",

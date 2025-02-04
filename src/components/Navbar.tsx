@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
 import {Heart} from 'lucide-react';
+import {CountdownDisplay} from './CountdownDisplay';
+import {useWedding} from '../context';
 
 export const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const {coupleDetails: {coupleTitle, date}} = useWedding();
 
     const navItems = [
         {href: '#home', label: 'Home'},
@@ -19,11 +22,11 @@ export const Navbar: React.FC = () => {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
                         <Heart className="h-6 w-6 text-rose-500"/>
-                        <span className="ml-2 text-xl font-dancing">Dami & Tola</span>
+                        <span className="ml-2 text-xl font-dancing">{coupleTitle}</span>
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex space-x-8">
+                    <div className="hidden md:flex items-center space-x-8">
                         {navItems.map((item) => (
                             <a
                                 key={item.href}
@@ -34,6 +37,9 @@ export const Navbar: React.FC = () => {
                             </a>
                         ))}
                     </div>
+
+                    {/* Countdown in Navbar */}
+                    <CountdownDisplay targetDate={date} variant="small"/>
 
                     {/* Mobile Menu Button */}
                     <button
