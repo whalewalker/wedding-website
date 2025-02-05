@@ -1,21 +1,6 @@
 import React, {createContext, ReactNode, useContext} from 'react';
+import {WeddingContextType} from "../types";
 
-interface WeddingContextType {
-    coupleDetails: {
-        groomName: string;
-        brideName: string;
-        coupleTitle: string;
-        groomOccupation: string;
-        brideOccupation: string;
-        story: string;
-        date: string;
-        venue: {
-            name: string;
-            address: string;
-            mapUrl: string;
-        };
-    };
-}
 
 const defaultContext: WeddingContextType = {
     coupleDetails: {
@@ -31,6 +16,8 @@ const defaultContext: WeddingContextType = {
             address: "123 Wedding Lane, Romance City",
             mapUrl: "https://maps.example.com",
         },
+        firstDate: "Our first date was a magical evening at the city's botanical garden, where we talked for hours under the stars.",
+        proposal: "The proposal happened during a surprise getaway to a cozy mountain cabin, surrounded by breathtaking views and heartfelt moments."
     },
 };
 

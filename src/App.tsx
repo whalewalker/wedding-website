@@ -17,11 +17,11 @@ const App: React.FC = () => {
                         <section id="couple" className="min-h-screen py-16">
                             <Couple/>
                         </section>
-                        <section id="gallery" className="min-h-screen py-16">
-                            <Gallery/>
-                        </section>
                         <section id="about-us" className="min-h-screen py-16">
                             <AboutUs/>
+                        </section>
+                        <section id="gallery" className="min-h-screen py-16">
+                            <Gallery/>
                         </section>
                         <section id="venue" className="min-h-screen py-16">
                             <Venue/>
