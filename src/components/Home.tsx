@@ -41,7 +41,7 @@ export const Home: React.FC = () => {
                 </div>
 
                 <button className="mt-8 px-6 py-3 bg-rose-500 hover:bg-rose-600 rounded-full transition-colors">
-                    Save the Date
+                    Checkout Our Wedding Whishlist
                 </button>
             </div>
 

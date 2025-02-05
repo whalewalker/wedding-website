@@ -47,7 +47,7 @@ export const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
                         <img
                             src={item.url}
                             alt={`Background ${index + 1}`}
-                            className="absolute inset-0 w-full h-full object-cover"
+                            className="absolute inset-auto w-full h-full object-cover object-top"
                         />
                     ) : (
                         <video
@@ -63,11 +63,11 @@ export const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
             ))}
 
             {/* Navigation Controls */}
-            <div className="absolute inset-x-0 bottom-8 flex justify-center space-x-2">
+            <div className="absolute inset-x-0 bottom-8 flex justify-center space-x-2 z-10">
                 {media.map((_, index) => (
                     <button
                         key={index}
-                        className={`w-2 h-2 rounded-full transition-colors ${
+                        className={`w-2 h-2 rounded-full transition-colors cursor-pointer ${
                             index === currentIndex ? 'bg-white' : 'bg-white/50'
                         }`}
                         onClick={() => setCurrentIndex(index)}
@@ -78,13 +78,13 @@ export const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
             {/* Arrow Controls */}
             <button
                 onClick={() => navigate('prev')}
-                className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors"
+                className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors z-10"
             >
                 <ChevronLeft className="w-6 h-6"/>
             </button>
             <button
                 onClick={() => navigate('next')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors"
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors z-10"
             >
                 <ChevronRight className="w-6 h-6"/>
             </button>

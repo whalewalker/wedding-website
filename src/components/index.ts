@@ -9,3 +9,4 @@ export {Footer} from './Footer';
 export {CountdownDisplay} from './CountdownDisplay';
 export {BackgroundCarousel} from './BackgroundCarousel.tsx';
 export {AudioPlayer} from './AudioPlayer.tsx';
+export {SocialIcon} from './SocialIcon.tsx';
