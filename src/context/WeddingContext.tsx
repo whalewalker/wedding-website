@@ -15,6 +15,10 @@ const defaultContext: WeddingContextType = {
             name: "Grand Palace",
             address: "123 Wedding Lane, Romance City",
             mapUrl: "https://maps.example.com",
+            location: {
+                lat: 6.436191042324617,
+                lng: 3.4884900972155175,
+            }
         },
         firstDate: "Our first date was a magical evening at the city's botanical garden, where we talked for hours under the stars.",
         proposal: "The proposal happened during a surprise getaway to a cozy mountain cabin, surrounded by breathtaking views and heartfelt moments."

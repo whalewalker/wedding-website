@@ -24,6 +24,10 @@ export interface WeddingContextType {
         story: string;
         date: string;
         venue: {
+            location: {
+                lat: number;
+                lng: number;
+            };
             name: string;
             address: string;
             mapUrl: string;
