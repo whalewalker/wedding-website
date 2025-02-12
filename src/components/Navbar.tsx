@@ -17,12 +17,12 @@ export const Navbar: React.FC = () => {
     ];
 
     return (
-        <nav className="fixed w-full bg-white/90 backdrop-blur-sm shadow-md z-50">
+        <nav className="fixed w-full bg-green-100 backdrop-blur-sm shadow-md z-50">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
-                        <Heart className="h-6 w-6 text-rose-500"/>
-                        <span className="ml-2 text-xl font-dancing">{coupleTitle}</span>
+                        <Heart className="h-6 w-6 text-green-500"/>
+                        <span className="ml-2 text-xl font-dancing text-green-700">{coupleTitle}</span>
                     </div>
 
                     {/* Desktop Menu */}
@@ -31,7 +31,7 @@ export const Navbar: React.FC = () => {
                             <a
                                 key={item.href}
                                 href={item.href}
-                                className="text-gray-600 hover:text-rose-500 transition-colors"
+                                className="text-green-700 hover:text-gray-600 transition-colors"
                             >
                                 {item.label}
                             </a>
@@ -65,7 +65,7 @@ export const Navbar: React.FC = () => {
                                 <a
                                     key={item.href}
                                     href={item.href}
-                                    className="block px-3 py-2 text-gray-600 hover:text-rose-500"
+                                    className="block px-3 py-2 text-gray-600 hover:text-green-500"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item.label}

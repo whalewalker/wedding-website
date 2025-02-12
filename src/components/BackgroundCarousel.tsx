@@ -68,7 +68,7 @@ export const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
                     <button
                         key={index}
                         className={`w-2 h-2 rounded-full transition-colors cursor-pointer ${
-                            index === currentIndex ? 'bg-white' : 'bg-white/50'
+                            index === currentIndex ? 'bg-green-200' : 'bg-white/50'
                         }`}
                         onClick={() => setCurrentIndex(index)}
                     />
@@ -78,13 +78,13 @@ export const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
             {/* Arrow Controls */}
             <button
                 onClick={() => navigate('prev')}
-                className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors z-10"
+                className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/20 text-green-200 hover:bg-black/40 transition-colors z-10"
             >
                 <ChevronLeft className="w-6 h-6"/>
             </button>
             <button
                 onClick={() => navigate('next')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors z-10"
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/20 text-green-200 hover:bg-black/40 transition-colors z-10"
             >
                 <ChevronRight className="w-6 h-6"/>
             </button>

@@ -25,7 +25,7 @@ export const Home: React.FC = () => {
             <div className="absolute inset-0 bg-black/40"/>
 
             {/* Content */}
-            <div className="relative text-center text-white space-y-8 px-4">
+            <div className="relative text-center text-green-100 space-y-8 px-4">
                 <h1 className="text-6xl md:text-8xl font-dancing mb-4">
                     {coupleDetails.groomName} & {coupleDetails.brideName}
                 </h1>
@@ -39,10 +39,6 @@ export const Home: React.FC = () => {
                 <div className="max-w-4xl mx-auto">
                     <CountdownDisplay targetDate={coupleDetails.date}/>
                 </div>
-
-                <button className="mt-8 px-6 py-3 bg-rose-500 hover:bg-rose-600 rounded-full transition-colors">
-                    Checkout Our Wedding Whishlist
-                </button>
             </div>
 
             {/* Audio Player */}

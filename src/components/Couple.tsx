@@ -12,10 +12,10 @@ export const Couple: React.FC = () => {
                 <h2 className="text-4xl md:text-5xl font-dancing mb-4">
                     Happy Couple
                 </h2>
-                <div className="flex items-center justify-center gap-2 text-rose-500">
-                    <div className="w-16 h-px bg-rose-200"/>
+                <div className="flex items-center justify-center gap-2 text-green-500">
+                    <div className="w-16 h-px bg-green-200"/>
                     <Heart className="w-6 h-6 animate-pulse"/>
-                    <div className="w-16 h-px bg-rose-200"/>
+                    <div className="w-16 h-px bg-green-200"/>
                 </div>
             </div>
 
@@ -24,7 +24,7 @@ export const Couple: React.FC = () => {
                     image={new URL('../assets/home-img-8.png', import.meta.url).href}
                     name={coupleDetails.groomName}
                     occupation={coupleDetails.groomOccupation}
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    description="The groom is a dedicated and hardworking individual, known for his kindness and generosity. He is loved by his family and friends and is always ready to lend a helping hand."
                     socialLinks={{
                         facebook: "https://facebook.com/groom",
                         instagram: "https://instagram.com/groom",
@@ -35,8 +35,8 @@ export const Couple: React.FC = () => {
 
                 <div className="relative">
                     <div className="absolute left-1/2 -translate-x-1/2 -top-8">
-                        <div className="w-16 h-16 rounded-full bg-rose-50 flex items-center justify-center">
-                            <Heart className="w-8 h-8 text-rose-500"/>
+                        <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center">
+                            <Heart className="w-8 h-8 text-green-500"/>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ export const Couple: React.FC = () => {
                     image={new URL('../assets/home-img-9.png', import.meta.url).href}
                     name={coupleDetails.brideName}
                     occupation={coupleDetails.brideOccupation}
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    description="The bride is a talented and passionate individual, dedicated to her career and loved by all who know her. She brings joy and warmth to every room she enters."
                     socialLinks={{
                         facebook: "https://facebook.com/bride",
                         instagram: "https://instagram.com/bride",

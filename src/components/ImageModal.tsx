@@ -69,7 +69,7 @@ export const ImageModal: React.FC<ImageModalProps> = ({
                     <button
                         key={image.id}
                         className={`relative flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden transition-transform hover:scale-110 
-              ${index === currentIndex ? 'ring-2 ring-rose-500' : 'opacity-50 hover:opacity-100'}`}
+            ${index === currentIndex ? 'ring-2 ring-green-500' : 'opacity-50 hover:opacity-100'}`}
                         onClick={(e) => {
                             e.stopPropagation();
                             onNavigate(index > currentIndex ? 'next' : 'prev');

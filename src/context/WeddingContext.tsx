@@ -4,24 +4,24 @@ import {WeddingContextType} from "../types";
 
 const defaultContext: WeddingContextType = {
     coupleDetails: {
-        groomName: "Damilare Williams",
+        groomName: "Damilare Akinremi",
         brideName: "Adetola Bolarinwa",
         coupleTitle: "Dami & Tola",
         groomOccupation: "Software Engineer",
         brideOccupation: "Architect",
-        story: "We met at a local coffee shop...",
-        date: new Date(2025, 5, 10).toDateString(),
+        date: new Date(2025, 3, 17).toDateString(),
         venue: {
-            name: "Grand Palace",
-            address: "123 Wedding Lane, Romance City",
+            name: "Pacific Hotel",
+            address: "Pacific hotel - Odunade event centre, Exodus Carwash Bus-stop, Badagry-Expressway, Lagos",
             mapUrl: "https://maps.example.com",
             location: {
-                lat: 6.436191042324617,
-                lng: 3.4884900972155175,
+                lat: 6.495371317369671,
+                lng: 3.0146947770696637,
             }
         },
         firstDate: "Our first date was a magical evening at the city's botanical garden, where we talked for hours under the stars.",
-        proposal: "The proposal happened during a surprise getaway to a cozy mountain cabin, surrounded by breathtaking views and heartfelt moments."
+        story: "We first met in 2012 after our WAEC exams and became friends. In 2019, we reconnected at a church conference and stayed in touch. In 2021, I expressed my feelings, and she said 'yes' on October 17, 2021.",
+        proposal: "I proposed on December 7, 2024, after courting for three years. We are excited to get married on April 17, 2025."
     },
 };
 

@@ -22,8 +22,7 @@ export const SocialIcon: React.FC<SocialIconProps> = ({platform, url}) => {
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-2 rounded-full bg-rose-50 hover:bg-rose-100 text-rose-500 transition-all hover:scale-110"
-        >
+            className="p-2 rounded-full bg-green-50 hover:bg-green-100 text-green-500 transition-all hover:scale-110">
             <Icon className="w-5 h-5"/>
         </a>
     );

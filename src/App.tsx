@@ -8,7 +8,7 @@ const App: React.FC = () => {
     return (
         <WeddingProvider>
             <Router>
-                <div className="min-h-screen bg-rose-200">
+                <div className="min-h-screen bg-green-200">
                     <Navbar/>
                     <main>
                         <section id="home" className="min-h-screen">

@@ -6,7 +6,6 @@ import {ImageModal} from "./ImageModal.tsx";
 export const Gallery: React.FC = () => {
     const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-    // Sample gallery data with different grid spans
     const galleryImages: GalleryImage[] = [
         {
             id: 1,
@@ -19,39 +18,34 @@ export const Gallery: React.FC = () => {
         {
             id: 2,
             src: new URL('../assets/home-img-2.png', import.meta.url).href,
-            alt: 'Engagement',
-            width: 600,
-            height: 600
+            alt: 'Love',
+            width: 800,
+            height: 1200,
+            gridSpan: {row: 2, col: 2}
         },
         {
             id: 3,
             src: new URL('../assets/home-img-3.png', import.meta.url).href,
             alt: 'Proposal',
-            width: 600,
-            height: 800,
-            gridSpan: {row: 2}
+            width: 800,
+            height: 1200,
+            gridSpan: {row: 2, col: 2}
         },
         {
             id: 4,
             src: new URL('../assets/home-img-4.png', import.meta.url).href,
             alt: 'Together',
             width: 800,
-            height: 600
+            height: 1200,
+            gridSpan: {row: 2, col: 2}
         },
         {
             id: 5,
             src: new URL('../assets/home-img-5.png', import.meta.url).href,
             alt: 'Happiness',
-            width: 600,
-            height: 600
-        },
-        {
-            id: 6,
-            src: new URL('../assets/home-img-6.png', import.meta.url).href,
-            alt: 'Love',
             width: 800,
             height: 1200,
-            gridSpan: {row: 2}
+            gridSpan: {row: 2, col: 2}
         },
         {
             id: 7,
@@ -59,7 +53,7 @@ export const Gallery: React.FC = () => {
             alt: 'Celebration',
             width: 800,
             height: 1200,
-            gridSpan: {row: 2}
+            gridSpan: {row: 2, col: 2}
         },
         {
             id: 8,
@@ -67,23 +61,15 @@ export const Gallery: React.FC = () => {
             alt: 'Adventure',
             width: 800,
             height: 1200,
-            gridSpan: {row: 2}
+            gridSpan: {row: 2, col: 2}
         },
         {
             id: 9,
             src: new URL('../assets/home-img-9.png', import.meta.url).href,
-            alt: 'Fantasy',
+            alt: 'Live Laugh Love',
             width: 800,
             height: 1200,
-            gridSpan: {row: 2}
-        },
-        {
-            id: 10,
-            src: new URL('../assets/home-img-1.png', import.meta.url).href,
-            alt: 'Live Laugh Love',
-            width: 900,
-            height: 1200,
-            gridSpan: {row: 2}
+            gridSpan: {row: 2, col: 2}
         }
     ];
 
@@ -106,9 +92,9 @@ export const Gallery: React.FC = () => {
                     Our Beautiful Moments
                 </h2>
                 <div className="flex items-center justify-center gap-2">
-                    <div className="w-16 h-px bg-rose-200"/>
-                    <Heart className="w-6 h-6 text-rose-500"/>
-                    <div className="w-16 h-px bg-rose-200"/>
+                    <div className="w-16 h-px bg-green-300"/>
+                    <Heart className="w-6 h-6 text-green-500"/>
+                    <div className="w-16 h-px bg-green-300"/>
                 </div>
             </div>
 
@@ -128,11 +114,10 @@ export const Gallery: React.FC = () => {
                         <img
                             src={image.src}
                             alt={image.alt}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                        />
+                            className="w-full h-full object-cover transition-transform duration-500 scale-110 group-hover:scale-100"/>
                         <div
-                            className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <p className="text-white text-lg font-dancing transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            className="absolute inset-0 bg-green-900/30 opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex items-center justify-center">
+                            <p className="text-white text-lg font-dancing transform translate-y-0 group-hover:-translate-y-4 transition-transform duration-300">
                                 {image.alt}
                             </p>
                         </div>
