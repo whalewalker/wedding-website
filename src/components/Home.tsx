@@ -34,7 +34,12 @@ export const Home: React.FC = () => {
                     We're Getting Married
                 </p>
                 <p className="text-lg md:text-xl">
-                    {coupleDetails.date}
+                    {new Date(coupleDetails.date).toLocaleDateString('en-US', {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    })}
                 </p>
 
                 <div className="max-w-4xl mx-auto">

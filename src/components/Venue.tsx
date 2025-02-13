@@ -32,9 +32,6 @@ export const Venue = () => {
                 <h2 className=" text-4xl md:text-5xl font-dancing mb-4z">
                     Celebration Venue
                 </h2>
-                <p className="text-green-800 max-w-2xl mx-auto">
-                    Join us for an unforgettable celebration at this beautiful location
-                </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12">
@@ -59,14 +56,19 @@ export const Venue = () => {
                             </VenueDetail>
 
                             <VenueDetail icon={Calendar} title="Date">
-                                {coupleDetails.date}
+                                {new Date(coupleDetails.date).toLocaleDateString('en-US', {
+                                    weekday: 'long',
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric'
+                                })}
                             </VenueDetail>
 
                             <VenueDetail icon={Clock} title="Schedule">
                                 <div className="space-y-2">
                                     <div className="flex justify-between items-center">
-                                        <span>Engagement</span>
-                                        <span className="font-medium">&nbsp;2:00 PM</span>
+                                        <span> Traditional wedding</span>
+                                        <span className="font-medium">&nbsp;12:00 PM</span>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span>Ceremony</span>

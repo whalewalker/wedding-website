@@ -78,7 +78,7 @@ export const Contribution = () => {
                             <AccountDetail
                                 bank="Zenith Bank"
                                 number="SWIFTCODE: ZEIBNGLA"
-                                name="Awwal Damilare Akinremi"
+                                name="Tejuosho Market"
                                 copyText="ZEIBNGLA"
                             />
                         </div>
@@ -86,7 +86,6 @@ export const Contribution = () => {
                 </div>
 
                 <div className="text-center text-green-800">
-                    <p>Your contribution will help us build our future together.</p>
                     <p>Thank you for your generosity! 💚</p>
                 </div>
             </div>
