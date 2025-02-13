@@ -39,11 +39,11 @@ export const Contribution = () => {
         <div className="max-w-7xl mx-auto px-4 py-16">
             <div className="text-center space-y-4 mb-16">
                 <h2 className=" text-4xl md:text-5xl font-dancing mb-4z">
-                    Contribution & Gift
+                    Contributions & Gifts
                 </h2>
                 <p className="text-green-800 max-w-2xl mx-auto">
-                    Your presence at our wedding is the greatest gift of all. However, if you wish to honor us
-                    with a gift, we've created this registry to help you choose something special.
+                    Your presence at our wedding is the greatest gift of all! However, if you wish to bless us with a
+                    gift, we would truly appreciate your kindness and thoughtfulness.
                 </p>
             </div>
             <div className="space-y-8 animate-[fadeIn_0.5s_ease-out_forwards]">
