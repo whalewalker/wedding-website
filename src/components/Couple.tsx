@@ -26,10 +26,10 @@ export const Couple: React.FC = () => {
                     occupation={coupleDetails.groomOccupation}
                     description="The groom is a dedicated GIS Specialist with extensive experience delivering geospatial solutions. He continually seeks to use his skills to make a meaningful impact. He is a devout Christian and a minister of God."
                     socialLinks={{
-                        facebook: "https://facebook.com/groom",
-                        instagram: "https://instagram.com/groom",
-                        twitter: "https://twitter.com/groom",
-                        linkedin: "https://linkedin.com/in/groom"
+                        facebook: "https://www.facebook.com/ak.damilare",
+                        instagram: "https://www.instagram.com/dee_akins?igsh=d2hlaHVhOGk2b3pr",
+                        twitter: "https://x.com/ak_damilare",
+                        linkedin: "https://www.linkedin.com/in/damilare-akinremi-7a8799129?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     }}
                 />
 
@@ -47,10 +47,9 @@ export const Couple: React.FC = () => {
                     occupation={coupleDetails.brideOccupation}
                     description="The bride is an experienced HR Generalist in a consulting firm and a devoted Christian, lovingly called God’s Tola."
                     socialLinks={{
-                        facebook: "https://facebook.com/bride",
-                        instagram: "https://instagram.com/bride",
-                        twitter: "https://twitter.com/bride",
-                        linkedin: "https://linkedin.com/in/bride"
+                        facebook: "https://www.facebook.com/adetola.bolarinwa.3",
+                        instagram: "https://www.instagram.com/adetola_mii?igsh=M2pjeXY1dzdpYzU0",
+                        linkedin: "https://www.linkedin.com/in/bolarinwaadetola?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     }}
                     reversed
                 />
