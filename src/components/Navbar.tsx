@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
         {href: '#gallery', label: 'Gallery'},
         {href: '#about-us', label: 'About Us'},
         {href: '#venue', label: 'Venue'},
-        {href: '#contribution', label: 'Registry'},
+        {href: '#contribution', label: 'Gift Us'},
     ];
 
     return (

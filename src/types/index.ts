@@ -34,3 +34,15 @@ export interface WeddingContextType {
         };
     };
 }
+
+export interface MediaItem {
+    type: 'image' | 'video';
+    url: string;
+    imgPosition?: 'top' | 'center' | 'bottom';
+}
+
+export interface BackgroundCarouselProps {
+    media: MediaItem[];
+    interval?: number;
+}
+

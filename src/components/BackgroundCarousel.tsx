@@ -1,19 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {ChevronLeft, ChevronRight} from 'lucide-react';
-
-interface MediaItem {
-    type: 'image' | 'video';
-    url: string;
-}
-
-interface BackgroundCarouselProps {
-    media: MediaItem[];
-    interval?: number;
-}
+import {BackgroundCarouselProps} from "../types";
 
 export const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
                                                                           media,
-                                                                          interval = 5000
+                                                                          interval = 5000,
                                                                       }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     useEffect(() => {
@@ -47,7 +38,7 @@ export const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
                         <img
                             src={item.url}
                             alt={`Background ${index + 1}`}
-                            className="absolute inset-auto w-full h-full object-cover object-top"
+                            className={`absolute inset-auto w-full h-full object-cover object-${item.imgPosition}`}
                         />
                     ) : (
                         <video

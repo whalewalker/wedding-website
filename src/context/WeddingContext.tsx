@@ -4,11 +4,11 @@ import {WeddingContextType} from "../types";
 
 const defaultContext: WeddingContextType = {
     coupleDetails: {
-        groomName: "Damilare Akinremi",
-        brideName: "Adetola Bolarinwa",
+        groomName: "Damilare",
+        brideName: "Adetola",
         coupleTitle: "Dami & Tola",
-        groomOccupation: "Software Engineer",
-        brideOccupation: "Architect",
+        groomOccupation: "GIS SPECIALIST",
+        brideOccupation: "HR GENERALIST",
         date: new Date(2025, 3, 17).toDateString(),
         venue: {
             name: "Pacific Hotel",

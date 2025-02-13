@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {CheckCircle, Copy, Share2} from 'lucide-react';
+import {CheckCircle, Copy} from 'lucide-react';
 
 
 const AccountDetail = ({bank, number, name, copyText}: {
@@ -82,14 +82,6 @@ export const Contribution = () => {
                                 copyText="ZEIBNGLA"
                             />
                         </div>
-                    </div>
-
-                    <div className="flex justify-center pt-4">
-                        <button className="flex items-center gap-2 px-6 py-2 bg-white rounded-full
-                            text-green-600 hover:bg-green-50 transition-colors">
-                            <Share2 className="h-4 w-4"/>
-                            Share Account Details
-                        </button>
                     </div>
                 </div>
 

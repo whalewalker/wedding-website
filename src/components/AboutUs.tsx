@@ -36,12 +36,12 @@ const TimelineItem = ({year, text, isLeft, icon: Icon}: {
     year: string, text: string, isLeft: boolean, icon: ForwardRefExoticComponent<Omit<LucideProps, "ref">>,
 }) => {
     return (
-        <div className={`flex ${isLeft ? 'flex-row' : 'flex-row-reverse'} items-center gap-4 group`}>
+        <div className={`flex flex-col ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-4 group`}>
             <div className={`flex-1 p-6 bg-white rounded-xl shadow-lg
-                    ${isLeft ? '-translate-x-4' : 'translate-x-4'}
-                    animate-[slideIn_0.8s_cubic-bezier(0.4,0,0.2,1)_forwards]
-                    hover:shadow-xl hover:scale-105 transition-all duration-500
-                    border border-green-50`}>
+            ${isLeft ? 'md:-translate-x-4' : 'md:translate-x-4'}
+            animate-[slideIn_0.8s_cubic-bezier(0.4,0,0.2,1)_forwards]
+            hover:shadow-xl hover:scale-105 transition-all duration-500
+            border border-green-50`}>
                 <div className="flex items-center gap-3 mb-2">
                     <Icon className="h-5 w-5 text-green-500"/>
                     <div className="font-semibold text-green-600">{year}</div>
@@ -53,9 +53,9 @@ const TimelineItem = ({year, text, isLeft, icon: Icon}: {
                     <div className="absolute inset-0 bg-green-300 rounded-full animate-ping opacity-75"></div>
                 </div>
                 <div className="absolute w-px h-24 bg-gradient-to-b from-green-300 to-transparent
-                      left-1/2 -translate-x-1/2"></div>
+              left-1/2 -translate-x-1/2"></div>
             </div>
-            <div className="flex-1"></div>
+            <div className="flex-1 hidden md:block"></div>
         </div>
     );
 };

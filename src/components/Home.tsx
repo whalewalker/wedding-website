@@ -3,18 +3,19 @@ import {useWedding} from '../context';
 import {CountdownDisplay} from "./CountdownDisplay.tsx";
 import {BackgroundCarousel} from './BackgroundCarousel';
 import {AudioPlayer} from './AudioPlayer';
+import {MediaItem} from "../types";
 
 export const Home: React.FC = () => {
     const {coupleDetails} = useWedding();
 
 
-    const mediaItems = [
-        {type: 'image' as const, url: new URL('../assets/home-img-1.png', import.meta.url).href},
-        {type: 'image' as const, url: new URL('../assets/home-img-2.png', import.meta.url).href},
-        {type: 'image' as const, url: new URL('../assets/home-img-3.png', import.meta.url).href},
-        {type: 'image' as const, url: new URL('../assets/home-img-4.png', import.meta.url).href},
-        {type: 'image' as const, url: new URL('../assets/home-img-5.png', import.meta.url).href},
-        {type: 'image' as const, url: new URL('../assets/home-img-6.png', import.meta.url).href},
+    const mediaItems: MediaItem[] = [
+        {type: 'image' as const, url: new URL('../assets/home-img-1.png', import.meta.url).href, imgPosition: 'top'},
+        {type: 'image' as const, url: new URL('../assets/home-img-2.png', import.meta.url).href, imgPosition: 'center'},
+        {type: 'image' as const, url: new URL('../assets/home-img-9.png', import.meta.url).href, imgPosition: 'top'},
+        {type: 'image' as const, url: new URL('../assets/home-img-6.png', import.meta.url).href, imgPosition: 'top'},
+        {type: 'image' as const, url: new URL('../assets/home-img-7.png', import.meta.url).href, imgPosition: 'center'},
+        {type: 'image' as const, url: new URL('../assets/home-img-8.png', import.meta.url).href, imgPosition: 'top'},
     ];
     return (
         <div className="relative h-screen flex items-center justify-center overflow-hidden">

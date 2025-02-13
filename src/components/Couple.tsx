@@ -24,7 +24,7 @@ export const Couple: React.FC = () => {
                     image={new URL('../assets/home-img-8.png', import.meta.url).href}
                     name={coupleDetails.groomName}
                     occupation={coupleDetails.groomOccupation}
-                    description="The groom is a dedicated and hardworking individual, known for his kindness and generosity. He is loved by his family and friends and is always ready to lend a helping hand."
+                    description="The groom is a dedicated GIS Specialist with extensive experience delivering geospatial solutions. He continually seeks to use his skills to make a meaningful impact. He is a devout Christian and a minister of God."
                     socialLinks={{
                         facebook: "https://facebook.com/groom",
                         instagram: "https://instagram.com/groom",
@@ -45,7 +45,7 @@ export const Couple: React.FC = () => {
                     image={new URL('../assets/home-img-9.png', import.meta.url).href}
                     name={coupleDetails.brideName}
                     occupation={coupleDetails.brideOccupation}
-                    description="The bride is a talented and passionate individual, dedicated to her career and loved by all who know her. She brings joy and warmth to every room she enters."
+                    description="The bride is an experienced HR Generalist in a consulting firm and a devoted Christian, lovingly called God’s Tola."
                     socialLinks={{
                         facebook: "https://facebook.com/bride",
                         instagram: "https://instagram.com/bride",

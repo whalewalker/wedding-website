@@ -1,4 +1,4 @@
-import React, {ForwardRefExoticComponent, useState} from 'react';
+import React, {ForwardRefExoticComponent} from 'react';
 import {useWedding} from '../context';
 import {Calendar, Clock, LucideProps, MapPin} from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
@@ -21,12 +21,9 @@ const VenueDetail = ({icon: Icon, title, children}: {
 
 export const Venue = () => {
     const {coupleDetails} = useWedding();
-    const [activeImage, setActiveImage] = useState(0);
 
     const venueImages = [
         new URL('../assets/home-img-1.png', import.meta.url).href,
-        new URL('../assets/home-img-2.png', import.meta.url).href,
-        new URL('../assets/home-img-3.png', import.meta.url).href
     ];
 
     return (
@@ -49,19 +46,9 @@ export const Venue = () => {
                                 key={index}
                                 src={src}
                                 alt={`Venue view ${index + 1}`}
-                                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700
-                          ${activeImage === index ? 'opacity-100' : 'opacity-0'}`}
+                                className={"absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700"}
                             />
                         ))}
-                        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-                            {venueImages.map((_, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => setActiveImage(index)}
-                                    className={`w-2 h-2 rounded-full transition-all duration-300 
-                                ${activeImage === index ? 'bg-green-500 w-6' : 'bg-white'}`}/>
-                            ))}
-                        </div>
                     </div>
 
                     <div className="bg-white rounded-2xl shadow-lg p-6 space-y-6">
@@ -78,13 +65,13 @@ export const Venue = () => {
                             <VenueDetail icon={Clock} title="Schedule">
                                 <div className="space-y-2">
                                     <div className="flex justify-between items-center">
-                                        <span>Ceremony</span>
-                                        <span className="font-medium">&nbsp;2:00 PM</span></div>
-                                    <div className="h-px bg-gray-100"></div>
-                                    <div className="flex justify-between items-center">
-                                        <span>Reception</span>
-                                        <span className="font-medium">&nbsp;6:00 PM</span>
+                                        <span>Engagement</span>
+                                        <span className="font-medium">&nbsp;2:00 PM</span>
                                     </div>
+                                    <div className="flex justify-between items-center">
+                                        <span>Ceremony</span>
+                                        <span className="font-medium">&nbsp;4:00 PM</span></div>
+                                    <div className="h-px bg-gray-100"></div>
                                 </div>
                             </VenueDetail>
                         </div>
