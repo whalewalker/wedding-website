@@ -6,7 +6,7 @@ interface ImageModalProps {
     images: GalleryImage[];
     currentIndex: number;
     onClose: () => void;
-    onNavigate: (direction: 'prev' | 'next') => void;
+    onNavigate: (direction: 'prev' | 'next' | number) => void;
 }
 
 export const ImageModal: React.FC<ImageModalProps> = ({
