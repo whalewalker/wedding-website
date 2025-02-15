@@ -8,7 +8,7 @@ interface AudioPlayerProps {
 export const AudioPlayer: React.FC<AudioPlayerProps> = ({audioUrl}) => {
     const [isPlaying, setIsPlaying] = useState(true);
     const [isMuted, setIsMuted] = useState(false);
-    const [volume, setVolume] = useState(0.1);
+    const [volume, setVolume] = useState(0.2);
     const audioRef = useRef<HTMLAudioElement>(null);
 
     useEffect(() => {

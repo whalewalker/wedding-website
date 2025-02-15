@@ -6,7 +6,7 @@ const defaultContext: WeddingContextType = {
     coupleDetails: {
         groomName: "Damilare",
         brideName: "Adetola",
-        coupleTitle: "Dami & Tola",
+        coupleTitle: "Adetola & Damilare",
         groomOccupation: "GIS SPECIALIST",
         brideOccupation: "HR GENERALIST",
         date: new Date(2025, 3, 17).toDateString(),

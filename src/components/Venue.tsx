@@ -57,10 +57,10 @@ export const Venue = () => {
 
                             <VenueDetail icon={Calendar} title="Date">
                                 {new Date(coupleDetails.date).toLocaleDateString('en-US', {
+                                    day: 'numeric',
                                     weekday: 'long',
-                                    year: 'numeric',
                                     month: 'long',
-                                    day: 'numeric'
+                                    year: 'numeric'
                                 })}
                             </VenueDetail>
 
@@ -70,10 +70,6 @@ export const Venue = () => {
                                         <span> Traditional wedding</span>
                                         <span className="font-medium">&nbsp;12:00 PM</span>
                                     </div>
-                                    <div className="flex justify-between items-center">
-                                        <span>Ceremony</span>
-                                        <span className="font-medium">&nbsp;4:00 PM</span></div>
-                                    <div className="h-px bg-gray-100"></div>
                                 </div>
                             </VenueDetail>
                         </div>

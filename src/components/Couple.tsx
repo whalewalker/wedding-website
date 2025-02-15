@@ -10,7 +10,7 @@ export const Couple: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 py-16">
             <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-dancing mb-4">
-                    Happy Couple
+                    The Couple
                 </h2>
                 <div className="flex items-center justify-center gap-2 text-green-500">
                     <div className="w-16 h-px bg-green-200"/>

@@ -2,11 +2,14 @@ import {useState} from 'react';
 import {CheckCircle, Copy} from 'lucide-react';
 
 
-const AccountDetail = ({bank, number, name, copyText}: {
+const AccountDetail = ({bank, number, name, copyText, sortCode, swiftCode, branch}: {
     bank: string;
     number: string;
     name: string;
-    copyText: string
+    copyText: string,
+    sortCode?: string;
+    swiftCode?: string;
+    branch?: string;
 }) => {
     const [copied, setCopied] = useState(false);
 
@@ -30,13 +33,18 @@ const AccountDetail = ({bank, number, name, copyText}: {
             </div>
             <div className="font-medium">{number}</div>
             <div className="text-sm text-gray-500">{name}</div>
+            <div className="text-sm text-gray-500">
+                {sortCode && <><strong>Sort Code:</strong> {sortCode} | </>}
+                {swiftCode && <><strong>Swift Code:</strong> {swiftCode} | </>}
+                {branch && <><strong>Branch:</strong> {branch}</>}
+            </div>
         </div>
     );
 };
 
 export const Contribution = () => {
     return (
-        <div className="max-w-7xl mx-auto px-4 py-16">
+        <div className="max-w-7xl mx-auto py-10">
             <div className="text-center space-y-4 mb-16">
                 <h2 className=" text-4xl md:text-5xl font-dancing mb-4z">
                     Contributions & Gifts
@@ -62,31 +70,40 @@ export const Contribution = () => {
                                 number="5000 0433 14"
                                 name="Awwal Damilare Akinremi"
                                 copyText="5000043314"
+                                swiftCode="ZEIBNGLA"
+                                sortCode="057151410"
+                                branch="Tejuosho Market, Lagos"
                             />
                             <AccountDetail
                                 bank="Zenith Bank (Pounds)"
                                 number="5061 4164 25"
                                 name="Awwal Damilare Akinremi"
                                 copyText="5061416425"
+                                swiftCode="ZEIBNGLA"
+                                sortCode="057151410"
+                                branch="Tejuosho Market, Lagos"
                             />
                             <AccountDetail
                                 bank="Zenith Bank (Euro)"
                                 number="5081 1378 23"
                                 name="Awwal Damilare Akinremi"
                                 copyText="5081137823"
+                                swiftCode="ZEIBNGLA"
+                                sortCode="057151410"
+                                branch="Tejuosho Market, Lagos"
                             />
-                            <AccountDetail
-                                bank="Zenith Bank"
-                                number="SWIFTCODE: ZEIBNGLA"
-                                name="Tejuosho Market"
-                                copyText="ZEIBNGLA"
-                            />
+                            {/*<AccountDetail*/}
+                            {/*    bank="Zenith Bank"*/}
+                            {/*    number="SWIFTCODE: ZEIBNGLA"*/}
+                            {/*    name="Tejuosho Market"*/}
+                            {/*    copyText="ZEIBNGLA"*/}
+                            {/*/>*/}
                         </div>
                     </div>
                 </div>
 
                 <div className="text-center text-green-800">
-                    <p>Thank you for your generosity! 💚</p>
+                    <p>Thank you for your love and generosity! 💚</p>
                 </div>
             </div>
         </div>

@@ -28,7 +28,7 @@ export const ImageModal: React.FC<ImageModalProps> = ({
             </div>
 
             <button
-                className="absolute left-4 top-1/2 -translate-y-1/2 p-4 text-white/70 hover:text-white transition-colors"
+                className="absolute left-4 top-1/2 -translate-y-1/2 p-4 text-white/70 hover:text-white transition-colors z-50"
                 onClick={(e) => {
                     e.stopPropagation();
                     onNavigate('prev');
@@ -38,7 +38,7 @@ export const ImageModal: React.FC<ImageModalProps> = ({
             </button>
 
             <button
-                className="absolute right-4 top-1/2 -translate-y-1/2 p-4 text-white/70 hover:text-white transition-colors"
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-4 text-white/70 hover:text-white transition-colors z-50"
                 onClick={(e) => {
                     e.stopPropagation();
                     onNavigate('next');
@@ -69,13 +69,10 @@ export const ImageModal: React.FC<ImageModalProps> = ({
                     <button
                         key={image.id}
                         className={`relative flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden transition-transform hover:scale-110 
-            ${index === currentIndex ? 'ring-2 ring-green-500' : 'opacity-50 hover:opacity-100'}`}
+                            ${index === currentIndex ? 'ring-2 ring-green-500' : 'opacity-50 hover:opacity-100'}`}
                         onClick={(e) => {
                             e.stopPropagation();
-                            onNavigate(index > currentIndex ? 'next' : 'prev');
-                            while (currentIndex !== index) {
-                                onNavigate(index > currentIndex ? 'next' : 'prev');
-                            }
+                            onNavigate(index);
                         }}
                     >
                         <img
@@ -86,6 +83,7 @@ export const ImageModal: React.FC<ImageModalProps> = ({
                     </button>
                 ))}
             </div>
+
         </div>
     );
 };

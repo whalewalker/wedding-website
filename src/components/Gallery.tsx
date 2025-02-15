@@ -9,7 +9,7 @@ export const Gallery: React.FC = () => {
     const galleryImages: GalleryImage[] = [
         {
             id: 1,
-            src: new URL('../assets/home-img-1.png', import.meta.url).href,
+            src: new URL('../assets/home-img-10.png', import.meta.url).href,
             alt: 'First Date',
             width: 800,
             height: 1200,
@@ -34,15 +34,15 @@ export const Gallery: React.FC = () => {
         {
             id: 4,
             src: new URL('../assets/home-img-4.png', import.meta.url).href,
-            alt: 'Together',
+            alt: 'Introduction',
             width: 800,
             height: 1200,
             gridSpan: {row: 2, col: 2}
         },
         {
             id: 5,
-            src: new URL('../assets/home-img-5.png', import.meta.url).href,
-            alt: 'Happiness',
+            src: new URL('../assets/home-img-1.png', import.meta.url).href,
+            alt: 'Celebration',
             width: 800,
             height: 1200,
             gridSpan: {row: 2, col: 2}
@@ -50,7 +50,7 @@ export const Gallery: React.FC = () => {
         {
             id: 7,
             src: new URL('../assets/home-img-7.png', import.meta.url).href,
-            alt: 'Celebration',
+            alt: 'Live Laugh Love',
             width: 800,
             height: 1200,
             gridSpan: {row: 2, col: 2}
@@ -58,7 +58,7 @@ export const Gallery: React.FC = () => {
         {
             id: 8,
             src: new URL('../assets/home-img-8.png', import.meta.url).href,
-            alt: 'Adventure',
+            alt: 'Ifemi',
             width: 800,
             height: 1200,
             gridSpan: {row: 2, col: 2}
@@ -66,24 +66,28 @@ export const Gallery: React.FC = () => {
         {
             id: 9,
             src: new URL('../assets/home-img-9.png', import.meta.url).href,
-            alt: 'Live Laugh Love',
+            alt: 'Ololufe',
             width: 800,
             height: 1200,
             gridSpan: {row: 2, col: 2}
         }
     ];
 
-    const handleNavigate = (direction: 'prev' | 'next') => {
+    const handleNavigate = (direction: 'prev' | 'next' | number) => {
         if (selectedImage === null) return;
 
         setSelectedImage(prev => {
-            if (!prev && prev !== 0) return null;
-            if (direction === 'prev') {
-                return prev === 0 ? galleryImages.length - 1 : prev - 1;
+            if (typeof direction === 'number') {
+                if (direction < 0 || direction >= galleryImages.length) return prev;
+                return direction;
             }
-            return (prev + 1) % galleryImages.length;
+
+            if (direction === 'prev')
+                return prev === null || prev === 0 ? galleryImages.length - 1 : prev - 1;
+            return prev === null ? 0 : (prev + 1) % galleryImages.length;
         });
     };
+
 
     return (
         <div className="max-w-7xl mx-auto px-4">

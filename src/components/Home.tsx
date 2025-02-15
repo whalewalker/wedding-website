@@ -28,7 +28,7 @@ export const Home: React.FC = () => {
             {/* Content */}
             <div className="relative text-center text-green-100 space-y-8 px-4">
                 <h1 className="text-6xl md:text-8xl font-dancing mb-4">
-                    {coupleDetails.groomName} & {coupleDetails.brideName}
+                    {coupleDetails.brideName} & {coupleDetails.groomName}
                 </h1>
                 <p className="text-xl md:text-2xl font-light">
                     We're Getting Married
@@ -48,7 +48,7 @@ export const Home: React.FC = () => {
             </div>
 
             {/* Audio Player */}
-            <AudioPlayer audioUrl={new URL('../assets/videoplayback.mp4', import.meta.url).href}/>
+            <AudioPlayer audioUrl={new URL('../assets/videoplayback.mp3', import.meta.url).href}/>
         </div>
     );
 };
