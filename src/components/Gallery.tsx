@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Heart} from 'lucide-react';
+import {Expand, Heart} from 'lucide-react';
 import {GalleryImage} from '../types';
 import {ImageModal} from "./ImageModal.tsx";
 
@@ -124,6 +124,10 @@ export const Gallery: React.FC = () => {
                             <p className="text-white text-lg font-dancing transform translate-y-0 group-hover:-translate-y-4 transition-transform duration-300">
                                 {image.alt}
                             </p>
+                            <div
+                                className="absolute top-4 right-4 flex items-center justify-center opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+                                <Expand className="w-5 h-5 text-white"/>
+                            </div>
                         </div>
                     </div>
                 ))}

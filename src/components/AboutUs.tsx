@@ -117,11 +117,12 @@ export const AboutUs = () => {
                 <div className="relative inline-block">
                     <div className="text-7xl text-green-200 font-serif opacity-80">"</div>
                 </div>
-                <p className="text-2xl text-green-900 italic font-light">
+                <p className="text-xl md:text-2xl text-green-900 italic font-light">
                     &quot;Every good gift and every perfect gift is from above, and comes down from the Father of
                     lights&quot;
                     <br/>
-                    <strong className="block mt-2 text-green-700 text-lg">- James 1:17</strong></p>
+                    <strong className="block mt-2 text-green-700 text-lg">- James 1:17</strong>
+                </p>
                 <div className="flex justify-center items-center gap-4 mt-8">
                     <span
                         className="text-xl font-dancing bg-gradient-to-r from-green-800 to-green-900 bg-clip-text text-transparent">{coupleDetails.groomName}</span>
