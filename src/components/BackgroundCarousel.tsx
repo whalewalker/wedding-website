@@ -38,7 +38,7 @@ export const BackgroundCarousel: React.FC<BackgroundCarouselProps> = ({
                         <img
                             src={item.url}
                             alt={`Background ${index + 1}`}
-                            className={`absolute inset-auto w-full h-full object-cover object-${item.imgPosition}`}
+                            className={`absolute inset-0 w-full h-full object-cover ${item.imgPosition}`}
                         />
                     ) : (
                         <video

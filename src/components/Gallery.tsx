@@ -16,9 +16,9 @@ export const Gallery: React.FC = () => {
             gridSpan: {row: 2, col: 2}
         },
         {
-            id: 2,
-            src: new URL('../assets/home-img-2.png', import.meta.url).href,
-            alt: 'Love',
+            id: 7,
+            src: new URL('../assets/home-img-12.jpg', import.meta.url).href,
+            alt: 'Live Laugh Love',
             width: 800,
             height: 1200,
             gridSpan: {row: 2, col: 2}
@@ -32,6 +32,22 @@ export const Gallery: React.FC = () => {
             gridSpan: {row: 2, col: 2}
         },
         {
+            id: 8,
+            src: new URL('../assets/home-img-13.jpg', import.meta.url).href,
+            alt: 'Ifemi',
+            width: 800,
+            height: 1200,
+            gridSpan: {row: 2, col: 2}
+        },
+        {
+            id: 5,
+            src: new URL('../assets/home-img-11.jpg', import.meta.url).href,
+            alt: 'Celebration',
+            width: 800,
+            height: 1200,
+            gridSpan: {row: 2, col: 2}
+        },
+        {
             id: 4,
             src: new URL('../assets/home-img-4.png', import.meta.url).href,
             alt: 'Introduction',
@@ -40,37 +56,21 @@ export const Gallery: React.FC = () => {
             gridSpan: {row: 2, col: 2}
         },
         {
-            id: 5,
-            src: new URL('../assets/home-img-1.png', import.meta.url).href,
-            alt: 'Celebration',
-            width: 800,
-            height: 1200,
-            gridSpan: {row: 2, col: 2}
-        },
-        {
-            id: 7,
-            src: new URL('../assets/home-img-7.png', import.meta.url).href,
-            alt: 'Live Laugh Love',
-            width: 800,
-            height: 1200,
-            gridSpan: {row: 2, col: 2}
-        },
-        {
-            id: 8,
-            src: new URL('../assets/home-img-8.png', import.meta.url).href,
-            alt: 'Ifemi',
-            width: 800,
-            height: 1200,
-            gridSpan: {row: 2, col: 2}
-        },
-        {
             id: 9,
-            src: new URL('../assets/home-img-9.png', import.meta.url).href,
+            src: new URL('../assets/home-img-14.jpg', import.meta.url).href,
             alt: 'Ololufe',
             width: 800,
             height: 1200,
             gridSpan: {row: 2, col: 2}
-        }
+        },
+        {
+            id: 2,
+            src: new URL('../assets/home-img-2.png', import.meta.url).href,
+            alt: 'Love',
+            width: 800,
+            height: 1200,
+            gridSpan: {row: 2, col: 2}
+        },
     ];
 
     const handleNavigate = (direction: 'prev' | 'next' | number) => {

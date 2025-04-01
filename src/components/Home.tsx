@@ -10,12 +10,31 @@ export const Home: React.FC = () => {
 
 
     const mediaItems: MediaItem[] = [
-        {type: 'image' as const, url: new URL('../assets/home-img-1.png', import.meta.url).href, imgPosition: 'top'},
-        {type: 'image' as const, url: new URL('../assets/home-img-2.png', import.meta.url).href, imgPosition: 'center'},
-        {type: 'image' as const, url: new URL('../assets/home-img-9.png', import.meta.url).href, imgPosition: 'top'},
-        {type: 'image' as const, url: new URL('../assets/home-img-6.png', import.meta.url).href, imgPosition: 'top'},
-        {type: 'image' as const, url: new URL('../assets/home-img-7.png', import.meta.url).href, imgPosition: 'center'},
-        {type: 'image' as const, url: new URL('../assets/home-img-8.png', import.meta.url).href, imgPosition: 'top'},
+        {
+            type: 'image' as const,
+            url: new URL('../assets/home-img-1.png', import.meta.url).href,
+            imgPosition: 'sm:object-top md:object-[0px_10px] lg:object-[0px_20px] xl:object-[0px_30px]'
+        },
+        {
+            type: 'image' as const,
+            url: new URL('../assets/home-img-2.png', import.meta.url).href,
+            imgPosition: 'sm:object-top md:object-[0px_-100px] lg:object-[0px_-200px] xl:object-[0px_-500px]'
+        },
+        {
+            type: 'image' as const,
+            url: new URL('../assets/home-img-11.jpg', import.meta.url).href,
+            imgPosition: 'sm:object-top md:object-[0px_-50px] lg:object-[0px_-100px] xl:object-[0px_-300px]'
+        },
+        {
+            type: 'image' as const,
+            url: new URL('../assets/home-img-12.jpg', import.meta.url).href,
+            imgPosition: 'sm:object-top md:object-[0px_-50px] lg:object-[0px_-100px] xl:object-[0px_-300px]'
+        },
+        {
+            type: 'image' as const,
+            url: new URL('../assets/home-img-13.jpg', import.meta.url).href,
+            imgPosition: 'sm:object-top md:object-[0px_-50px] lg:object-[0px_-100px] xl:object-[0px_-300px]'
+        },
     ];
     return (
         <div className="relative h-screen flex items-center justify-center overflow-hidden">

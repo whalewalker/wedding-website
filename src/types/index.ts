@@ -38,7 +38,7 @@ export interface WeddingContextType {
 export interface MediaItem {
     type: 'image' | 'video';
     url: string;
-    imgPosition?: 'top' | 'center' | 'bottom';
+    imgPosition?: string;
 }
 
 export interface BackgroundCarouselProps {
