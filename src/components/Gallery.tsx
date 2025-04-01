@@ -17,7 +17,7 @@ export const Gallery: React.FC = () => {
         },
         {
             id: 7,
-            src: new URL('../assets/home-img-12.jpg', import.meta.url).href,
+            src: new URL('../assets/2.png', import.meta.url).href,
             alt: 'Live Laugh Love',
             width: 800,
             height: 1200,
@@ -33,7 +33,7 @@ export const Gallery: React.FC = () => {
         },
         {
             id: 8,
-            src: new URL('../assets/home-img-13.jpg', import.meta.url).href,
+            src: new URL('../assets/3.png', import.meta.url).href,
             alt: 'Ifemi',
             width: 800,
             height: 1200,
@@ -41,7 +41,7 @@ export const Gallery: React.FC = () => {
         },
         {
             id: 5,
-            src: new URL('../assets/home-img-11.jpg', import.meta.url).href,
+            src: new URL('../assets/1.png', import.meta.url).href,
             alt: 'Celebration',
             width: 800,
             height: 1200,
@@ -57,7 +57,7 @@ export const Gallery: React.FC = () => {
         },
         {
             id: 9,
-            src: new URL('../assets/home-img-14.jpg', import.meta.url).href,
+            src: new URL('../assets/4.png', import.meta.url).href,
             alt: 'Ololufe',
             width: 800,
             height: 1200,

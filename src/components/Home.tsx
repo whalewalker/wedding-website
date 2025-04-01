@@ -22,17 +22,17 @@ export const Home: React.FC = () => {
         },
         {
             type: 'image' as const,
-            url: new URL('../assets/home-img-11.jpg', import.meta.url).href,
+            url: new URL('../assets/1.png', import.meta.url).href,
             imgPosition: 'sm:object-top md:object-[0px_-50px] lg:object-[0px_-100px] xl:object-[0px_-300px]'
         },
         {
             type: 'image' as const,
-            url: new URL('../assets/home-img-12.jpg', import.meta.url).href,
+            url: new URL('../assets/4.png', import.meta.url).href,
             imgPosition: 'sm:object-top md:object-[0px_-50px] lg:object-[0px_-100px] xl:object-[0px_-300px]'
         },
         {
             type: 'image' as const,
-            url: new URL('../assets/home-img-13.jpg', import.meta.url).href,
+            url: new URL('../assets/6.png', import.meta.url).href,
             imgPosition: 'sm:object-top md:object-[0px_-50px] lg:object-[0px_-100px] xl:object-[0px_-300px]'
         },
     ];
